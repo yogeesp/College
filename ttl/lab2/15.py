@@ -1,0 +1,14 @@
+# WAP to print the following pattern for n rows. Ex. for n=5 rows
+
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+
+num = int(input("Enter number of rows: "))
+
+for i in range (0, num):
+    for j in range (0, i+1):
+        print("* ", end = " ")
+    print("\r")

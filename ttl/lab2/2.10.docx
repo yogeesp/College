@@ -1,0 +1,20 @@
+The primeFactors(n, primes) function is a utility function that is used to store the 
+prime factors of the number n in the list primes using dynamic programming. 
+This function is called in the findPrimeFactors(n) function for every number from 2 to n.
+
+The function starts by checking if the number n is divisible by any number from 2 to the
+square root of n (inclusive) using a for loop. If n is divisible by any of these numbers, 
+it means that n is not a prime number and its prime factors can be found by multiplying the
+ prime factors of the divisor and the quotient.
+
+The primes[n] = primes[i] + primes[n // i] line store the prime factors of the number 
+n in the list by adding the prime factors of the divisor and the quotient.
+
+If n is not divisible by any number from 2 to the square root of n, then 
+n is a prime number and its prime factor is just itself, so the code stores n in the 
+list primes[n].
+
+This way, we can use the prime factors of the number that we have already 
+computed to find prime factors of the next number, thus avoiding redundant computations.
+
+The function does not return anything as the prime factors are stored in the list primes.

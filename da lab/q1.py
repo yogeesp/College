@@ -1,0 +1,5 @@
+name=input("Enter you name: ")
+roll=input("Enter your roll number")
+secn=input("Enter your section")
+address=input("Enter address")
+print(name,roll,secn,address)
